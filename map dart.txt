@@ -1,0 +1,50 @@
+void main(){
+  
+  // map
+  
+  // map é composto de uma chave e uma string
+  //   chave   valor
+  Map<String, String> mapa = {'chave': 'valor'};
+  print(mapa);
+  
+  //inserindo nova chave com valor
+  mapa.putIfAbsent('novaChave', () => 'novoValor');
+  print(mapa);
+  
+  // inserindo nova chave com valor
+  mapa['novaChaveDois']= 'novoValorDois';
+  print(mapa);
+  
+  // remove um valor com base na sua chave
+  mapa.remove('chave');
+  print(mapa);
+  
+  // atualizando valor com base na chave
+  mapa['novaChaveDois'] = 'atualizado';
+  print(mapa);
+  
+  // atualizando valor com base na chave
+  mapa.update('novaChaveDois', (value) => 'atualizado2');
+  print(mapa);
+  
+  // percorre a lista de chave e valor
+  mapa.forEach((chave, valor)=> print('ah chave é: $chave, o valor é: $valor.'));
+  
+  //percorre e imprime apenas as chaves
+  mapa.keys.forEach(print);
+  
+  // percorre e imprime apenas os valores
+  mapa.values.forEach(print);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
